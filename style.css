@@ -1,0 +1,17 @@
+.nav{
+    padding-left: 18vh;
+    padding-right: 18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+svg{
+    padding-top: 3vh;
+    margin: auto 0 auto 0;
+}
+
+.logo{
+    height: 12vh;
+    width: auto;
+}
