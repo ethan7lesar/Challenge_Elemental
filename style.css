@@ -1,50 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
-*{
+* {
     font-family: 'Inter', sans-serif;
 }
 
-.nav{
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.container {
+   width: 100%;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px 0 120px;
+}
+
+.slider-inner {
+    
+    padding: 3px;
+}
+
+.slider-inner img{
+    display: none;
+    margin: auto;
+    width: 90%;
+    height: 450px;
+}
+
+.slider-inner img.active{
+    display: block;
+    width: 90%;
+    height: 550px;
+}
+.prev, .next{
+    cursor: pointer;
+}
+
+.prev{ 
+    z-index: 100;
+}
+
+.next{
+    z-index: 100;
+}
+
+.nav {
     width: 78%;
-   margin: auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.burger{
+
+.burger {
     margin-right: 20px;
 }
 
-svg{
+svg {
     padding-top: 3vh;
     margin: auto 0 auto 0;
 }
 
-.logo{
+.logo {
     height: 12vh;
     width: auto;
 }
 
-.sub-text{
+.sub-text {
     width: 45%;
-    height: 100px;
+    height: 222px;
+    font-size: 18px;
     font-size: larger;
     font-weight: 300;
 }
 
-.sub-hero{
+.sub-hero {
     padding: 0 28px 0 28px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     gap: 36px;
 }
 
-.box-sponsor{
+.box-sponsor {
     display: flex;
     flex-direction: column;
     width: 380px;
@@ -52,7 +98,7 @@ svg{
     background-color: #061B2C;
 }
 
-#sm-block{
+#sm-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,36 +109,37 @@ svg{
     font-weight: 600;
     padding: 0 9px 0 9px;
 }
-.container{
+
+.container1 {
     width: 380px;
     gap: 20px;
     display: flex;
 }
 
-.abt-content{
- display: flex;
- gap: 21px;
-justify-content: center;
+.abt-content {
+    display: flex;
+    gap: 21px;
+    justify-content: center;
 
 }
 
-h3{
+h3 {
     color: white;
     font-weight: 500;
     margin-left: 33px;
     font-size: 24px;
 }
- 
-.text{
+
+.text {
     margin: 0;
     font-size: 9.6px;
 }
 
-.arrow{
+.arrow {
     margin: 0;
     padding: 0;
 }
 
-.arrow1{
-    margin-left: 33px;  
+.arrow1 {
+    margin-left: 33px;
 }
