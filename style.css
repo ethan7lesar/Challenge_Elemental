@@ -8,18 +8,20 @@ a {
     color: #ffff;
     text-decoration: none;
 }
-.activeSVG{
+
+.activeSVG {
     transform: rotate(-30deg);
     margin-right: 8px;
 }
 
 .container {
-   width: 100%;
-   position: relative;
+    width: 100%;
+    position: relative;
 }
-.controls{
+
+.controls {
     position: absolute;
-    bottom: 34% ;
+    bottom: 34%;
     right: 5%;
     display: flex;
     justify-content: space-between;
@@ -29,11 +31,11 @@ a {
 }
 
 .slider-inner {
-    
+
     padding: 3px;
 }
 
-.active-logos{
+.active-logos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +46,7 @@ a {
     top: 85%;
 }
 
-.hero-text{
+.hero-text {
     display: flex;
     align-items: center;
     height: 100px;
@@ -55,7 +57,8 @@ a {
     top: 40%;
 
 }
-.hero-block{
+
+.hero-block {
     height: 100px;
     background-color: black;
     width: 45%;
@@ -64,37 +67,40 @@ a {
     position: absolute;
     z-index: -5;
     top: 40%;
-   right: -0;
+    right: -0;
 
 }
 
-.hero-text h1{
+.hero-text h1 {
     color: white;
     font-weight: 500;
     font-size: 24px;
     margin-inline-start: 210px;
 }
-.slider-inner img{
+
+.slider-inner img {
     display: none;
     margin: auto;
     width: 80%;
     height: 450px;
 }
 
-.slider-inner img.active{
+.slider-inner img.active {
     display: block;
     width: 80%;
     height: 550px;
 }
-.prev, .next{
+
+.prev,
+.next {
     cursor: pointer;
 }
 
-.prev{ 
+.prev {
     z-index: 100;
 }
 
-.next{
+.next {
     z-index: 100;
 }
 
@@ -197,4 +203,49 @@ h3 {
 
 .arrow1 {
     margin-left: 33px;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .image-block {
+        display: none;
+    }
+
+    .sub-text {
+        justify-content: start;
+        width: auto;
+        height: auto;
+    }
+
+    .controls{
+        right: -18%;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .sub-hero{
+        flex-direction: column;
+    }
+    .sub-text{
+        width: auto;
+        height: auto;
+    }
+    svg{
+        padding-top: 0;
+    }
+    .image-block{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .hero-text h1 {
+        font-size: 18px;
+        margin-inline-start: 60px;
+    }
 }
