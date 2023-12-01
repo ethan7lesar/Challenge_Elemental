@@ -20,4 +20,15 @@ $(document).ready(function(){
         }
     
         });
+
+        $('.next').on('click', function(){
+            var currentSVG = $('.activeSVG');
+            var nextSVG = currentSVG.next();
+        
+            if(nextSVG.length){
+                currentSVG.removeClass();
+                nextSVG.addClass('activeSVG');
+            }
+        
+            });
 });

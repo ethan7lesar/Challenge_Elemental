@@ -8,14 +8,24 @@ a {
     color: #ffff;
     text-decoration: none;
 }
+.activeSVG{
+    transform: rotate(-30deg);
+    margin-right: 8px;
+}
 
 .container {
    width: 100%;
+   position: relative;
 }
 .controls{
+    position: absolute;
+    bottom: 34% ;
+    right: 5%;
     display: flex;
     justify-content: space-between;
     margin: 0 120px 0 120px;
+    z-index: 10;
+    top: 29%;
 }
 
 .slider-inner {
@@ -23,16 +33,57 @@ a {
     padding: 3px;
 }
 
+.active-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    position: absolute;
+    right: 12%;
+    top: 85%;
+}
+
+.hero-text{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #234AC1;
+    width: 45%;
+    margin-inline-start: 30px;
+    position: absolute;
+    top: 40%;
+
+}
+.hero-block{
+    height: 100px;
+    background-color: black;
+    width: 45%;
+    margin-inline-start: auto;
+    margin-inline-end: 30px;
+    position: absolute;
+    z-index: -5;
+    top: 40%;
+   right: -0;
+
+}
+
+.hero-text h1{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    margin-inline-start: 210px;
+}
 .slider-inner img{
     display: none;
     margin: auto;
-    width: 90%;
+    width: 80%;
     height: 450px;
 }
 
 .slider-inner img.active{
     display: block;
-    width: 90%;
+    width: 80%;
     height: 550px;
 }
 .prev, .next{
@@ -52,7 +103,9 @@ a {
     margin: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .burger {
@@ -117,7 +170,9 @@ svg {
 }
 
 .abt-content {
+    width: auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 21px;
     justify-content: center;
 
