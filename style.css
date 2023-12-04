@@ -220,6 +220,10 @@ h3 {
     .controls{
         right: -18%;
     }
+    .slider-inner img.active {
+        width: 80%;
+        height: 300px;
+    }
 
 
 }
@@ -241,11 +245,51 @@ h3 {
         margin-right: auto;
         flex-wrap: nowrap;
     }
+    .controls{
+        bottom: 30%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .image-block{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 850px){
     .hero-text h1 {
         font-size: 18px;
         margin-inline-start: 60px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    h3{
+        margin-left: 70px;
+    }
+    .arrow1 {
+        margin-left: 70px;
+    }
+
+    .text {
+        margin-left: 50px;
+    }
+    .hero-text h1 {
+        font-size: 18px;
+        margin-inline-start: 20px;
+    }
+    .controls{
+        bottom: 25%;
+        right: -28%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .slider-inner img.active {
+        width: 80%;
+        height: 400px;
+    }
+    .controls{
+        bottom: 22%;
     }
 }
