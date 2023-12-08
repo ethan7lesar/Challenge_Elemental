@@ -254,6 +254,9 @@ h3 {
     .image-block{
         display: none;
     }
+    .controls{
+        right: -18%;
+    }
 }
 
 @media screen and (max-width: 850px){
@@ -292,4 +295,17 @@ h3 {
     .controls{
         bottom: 22%;
     }
+}
+
+@media screen and (max-width: 250px){
+    .sub-text {
+        font-size: 13px;
+        width: 100vw;
+    }
+
+    .slider-inner img.active {
+        width: 100vw;
+        height: 30vh;
+    }
+    
 }
