@@ -233,7 +233,7 @@ h3 {
         flex-direction: column;
     }
     .sub-text{
-        width: auto;
+        width: 100vh;
         height: auto;
     }
     svg{
@@ -247,6 +247,13 @@ h3 {
     }
     .controls{
         bottom: 30%;
+    }
+    .box-sponsor {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 180px;
+        background-color: #061B2C;
     }
 }
 
@@ -294,6 +301,10 @@ h3 {
     }
     .controls{
         bottom: 22%;
+    }
+    .sub-text{
+        width: auto;
+        height: auto;
     }
 }
 
