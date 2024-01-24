@@ -336,16 +336,16 @@ h3 {
 }
 
 @media screen and (max-width: 300px){
-    h3{
+    /* h3{
         margin-left: 70px;
     }
     .arrow1 {
         margin-left: 70px;
-    }
+    } */
 
-    .text {
+    /* .text {
         margin-left: 50px;
-    }
+    } */
     .hero-text h1 {
         font-size: 18px;
         margin-inline-start: 20px;
