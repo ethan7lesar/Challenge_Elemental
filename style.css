@@ -238,6 +238,7 @@ h3 {
     }
     svg{
         padding-top: 0;
+        width: 50px;
     }
     .image-block{
         width: fit-content;
